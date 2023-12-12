@@ -1,0 +1,39 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "功能：代码转换/文件优化/代码分割/模块合并/自动刷新/代码校验/自动发布 1、创建目录   2、初始化webpack项目   npm init -y  3、添加webpack依赖  npm add --include=dev webpack webpack-cli 4、创建目录文件 5、打包webpack  npx webpack     npx webpack index.js -o dist.js     npx 检测node_modules有没有webpack，如果没有会下载     webpack打包之后的文件：         1、自执行函数         2、参数通过对象形式传递 \"key(文件路径)\" : function(){} 6、创建webpack.config.js文件 并配置webpack配置 7、加载cssloader  npm add --include=dev css-loader style-loader 8、图片使用内置loader \"asset/resource\" 9、安装插件 html-webpack-plugin 10、安装babel loader 11、配置压缩 terser-webpack-plugin 12、热更新打包：webpack-dev-server 13、打包分析工具 webpack-bundle-analyzer",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve",
+    "dll": "webpack --config webpack.dllconfig.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "echarts": "^5.4.2",
+    "html-webpack-plugin": "^5.5.1",
+    "terser-webpack-plugin": "^5.3.8",
+    "vue": "^3.3.4",
+    "webpack": "^5.89.0",
+    "webpack-bundle-analyzer": "^4.8.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.0"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.3.4",
+    "add-asset-html-webpack-plugin": "^6.0.0",
+    "babel-loader": "^8.0.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.3",
+    "element-plus": "^2.3.4",
+    "happypack": "^5.0.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "style-loader": "^3.3.2",
+    "vue-loader": "^16.8.3",
+    "vue-template-compiler": "^2.7.15"
+  }
+}
